@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>코딩게시판 보기</title>
+<link rel="stylesheet", href = "../css/view.css">
+</head>
+<body>
+<a href="../main_home.html"><p>home</p></a>
+<h1>게시글내용</h1>
+<table>
+    <th>작성자</th>
+    <td><p id="writer"></p></td>
+  </tr>
+  <tr>
+    <th>활용 언어</th>
+    <td><p id="category"></p></td>
+  </tr>
+  <tr>
+  <tr>
+    <th>활용 언어 정보</th>
+    <td>
+      <pre id="review"></pre>
+    </td>
+    </tr>
+  <tr>
+    <th>작성일</th>
+    <td><p id="write_date"></p></td>
+  </tr>
+</table>
+<div style="width:100%; text-align: right;">
+  <button class ="btn" onclick="removeContent()">삭제</button>
+  <button class ="btn" onclick="modify()">수정</button>
+  <button class ="btn" onclick="window.history.back()">목록</button>
+</div>
+
+<div style="width: 100%; text-align: center; margin: auto; border-collapse: collapse;">
+  <div id="comments2">
+    <div id="comment-head" class="comment-row">
+      <span id="comments-count"></span>댓글
+    </div>
+    <div class="commet-row">
+      <textarea id="new-comment" name = "new_comment" row=5 placeholder="New Comment"></textarea>
+    <button type="submit" onclick="submitComment()">전송</button>
+    </div>
+    <div class="commet-row">
+      <table width="100%">
+        <tbody id="comments2-rows">
+        </tbody>
+      </table>
+    </div>
+  </div>
+  </div>
+
+</body>
+<script src="../script/coding_view.js"></script>
+</html>

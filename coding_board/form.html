@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>코딩게시판 글작성</title>
+<link rel="stylesheet", href = "../css/form.css">
+</head>
+<body>
+<a href="../main_home.html"><p>home</p></a>
+<h1>정보 글쓰기</h1>
+<table>
+  <tr>
+    <th>작성자</th>
+    <td><input size = "100%" type="text" id="writer" name="writer"/></td>
+  </tr>
+  <tr>
+    <th>언어</th>
+    <td>
+      <input size = "100%" type="text" id = "category" name="category" list ="langname">
+      <datalist id="langname">
+        <option value="C"> </option>
+        <option value="JAVA"> </option>
+        <option value="PYTHON"> </option>
+        <option value="HTML"> </option>
+      </datalist>
+    </td>
+  </tr>
+  <tr>
+    <th>활용 언어 정보</th>
+    <td>
+      <textarea rows=30 type="text" id="review" name="review"></textarea>
+    </td>
+  </tr>
+</table>
+<div>
+  <button class ="btn" onclick="window.history.back()">취소</button>
+  <button class ="btn" onclick="save()">저장</button>
+</div>
+</body>
+<script src="../script/coding_form.js"></script>
+</html>

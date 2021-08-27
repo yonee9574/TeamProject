@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<title>여행게시판 글작성</title>
+<link rel="stylesheet", href = "../css/modify.css">
+<body>
+  <a href="../main_home.html"><p>home</p></a>
+<h1>게시글작성</h1>
+<form>
+<table>
+  <tr>
+    <th>제목</th>
+    <td><input size = "100%" type="text" id="title" name="title"required/></td>
+  </tr>
+  <tr>
+    <th>작성자</th>
+    <td><input size = "100%" type="text" id="writer" name="writer"required/></td>
+  </tr>
+  <tr>
+    <th>카테고리</th>
+    <td><input size = "100%" type="text" id="category" name="category" list="list1"/>
+    <datalist id="list1">
+      <option value="국내"></option>
+      <option value="국외"></option>
+    </datalist>
+    </td>
+  </tr>
+  <tr>
+    <th>내용</th>
+    <td>
+      <textarea rows=30 type="text" id="contents" name="contents"></textarea>
+    </td>
+  </tr>
+</table>
+</form>
+  <button class ="btn" onclick="window.history.back()">취소</button>
+  <button class ="btn" onclick="save()">수정</button>
+</div>
+
+</body>
+<script src="../script/travel_modify.js"></script>
+</html>
